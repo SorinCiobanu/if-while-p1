@@ -1,34 +1,41 @@
 <script>
 
-    let firstDay = 1
-    let lastDay  = 7
+    let monday   = "Monday"
+    let tuesday  = "Tuesday"
+    let wensday  = "Wensday"
+    let thursday = "Thursday"
+    let friday   = "Friday"
+    let saturday = "Saturday"
+    let sunday   = "Sunday"
+    let item     = 1
 
     document.write(`<ol type="1">`)
         
-        if (lastDay <= 7) {
-            document.write(
-                `<li> Monday</li>
-                <li> Tuesday</li>
-                <li> Wensday</li>
-                <li> Thursday</li>
-                <li> Friday</li>
-                <li> Saturday</li>
-                <li> Sunday</li>`
-            )
-        } else if (firstDay >= 1) {
-           document.write(
-                `<li> Monday</li>
-                <li> Tuesday</li>
-                <li> Wensday</li>
-                <li> Thursday</li>
-                <li> Friday</li>
-                <li> Saturday</li>
-                <li> Sunday</li>`
-            ) 
-        } else {
-            alert(
-                `ERROR`
-            )
+        while ( item <= 7 ) {
+
+            if ( item == 1 ) {
+                document.write( `<li> ${monday} </li>` )
+                item++
+            } else if ( item == 2 ) {
+                document.write( `<li> ${tuesday} </li>` )
+                item++
+            } else if ( item == 3 ) {
+                document.write( `<li> ${wensday} </li>` )
+                item++
+            } else if ( item == 4 ) {
+                document.write( `<li> ${thursday} </li>` )
+                item++
+            } else if ( item == 5 ) {
+                document.write( `<li> ${friday} </li>` )
+                item++
+            } else if ( item == 6) {
+                document.write( `<li> ${saturday} </li>` )
+                item++
+            } else if ( item == 7 ) {
+                document.write( `<li> ${sunday} </li>` )
+                item++
+            }
+
         }
 
     document.write(`</ol>`)
